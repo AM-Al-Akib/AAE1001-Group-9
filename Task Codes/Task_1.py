@@ -112,9 +112,257 @@ class AStarPlanner:
 
             # reaching goal
             if current.x == goal_node.x and current.y == goal_node.y:
-                print("Total Trip time required -> ",current.cost )
+                airplane_symbol_5 = "🛩️" #airplane symbol 5
+                print()
+                print( airplane_symbol_5 + "   Total Trip time required ➜ ",current.cost )
                 goal_node.parent_index = current.parent_index
                 goal_node.cost = current.cost
+                TotalTime = current.cost
+
+                #For A321neo
+                FCR321 = 54 #Fuel Consumption Rate
+                PC321 = 200 #Passenger Capacity
+                CTL321 = 10 #Cost Time Low
+                CTM321 = 15 #Cost Time Medium 
+                CTH321 = 20 #Cost Time High
+                FC321 = 1800 #Fixed Cost
+
+                #For A330-900neo
+                FCR330 = 84 #Fuel Consumption Rate
+                PC330 = 300 #Passenger Capacity
+                CTL330 = 15 #Cost Time Low
+                CTM330 = 21 #Cost Time Medium 
+                CTH330 = 27 #Cost Time High
+                FC330 = 2000 #Fixed Cost
+
+                #For A350-900
+                FCR350 = 90 #Fuel Consumption Rate
+                PC350 = 350 #Passenger Capacity
+                CTL350 = 20 #Cost Time Low
+                CTM350 = 27 #Cost Time Medium 
+                CTH350 = 34 #Cost Time High
+                FC350 = 2500 #Fixed Cost
+
+                #Setup Scenarios
+
+                #Scenario 1
+                TPPW1 = 3000 #Total Passengers Per Week
+                MNFPW1 = 12 # Maximum number of flights per week
+                FC1 = 0.76 #Fuel Cost
+
+                #Scenario 2
+                TPPW2 = 1250 #Total Passengers Per Week
+                MNFPW2 = 5 * 20 # Maximum number of flights per week
+                FC2 = 0.88 #Fuel Cost
+
+                #Scenario 3
+                TPPW3 = 2500 #Total Passengers Per Week
+                MNFPW3 = 25 # Maximum number of flights per week
+                FC3 = 0.95 #Fuel Cost
+
+
+                #Scenario 1 
+                #Calculate flight numbers
+                if TPPW1 % PC321==0:
+                    Flight_Number_A321neo_1 = TPPW1 // PC321
+                else:
+                    Flight_Number_A321neo_1 = TPPW1 // PC321+1
+
+                if TPPW1 % PC330==0:
+                    Flight_Number_A330_900neo_1 = TPPW1 // PC330
+                else: Flight_Number_A330_900neo_1 = TPPW1 // PC330+1
+
+                if TPPW1 % PC350==0:
+                    Flight_Number_A350_900_1 = TPPW1 // PC350
+                else: Flight_Number_A350_900_1 = TPPW1 // PC350+1
+
+                #Calculate totol fee
+                Cost_A321neo_1 = (FC1 * FCR321 * TotalTime + CTM321 * TotalTime + FC321)*Flight_Number_A321neo_1
+                Cost_A330_900neo_1 = (FC1 * FCR330 * TotalTime + CTM330 * TotalTime + FC330)*Flight_Number_A330_900neo_1
+                Cost_A350_900_1 = (FC1 * FCR350 * TotalTime + CTM350 * TotalTime + FC350)*Flight_Number_A350_900_1
+
+                #Airplane Symbol
+                airplane_symbol = "✈"
+                airplane_symbol_2 = "🛫"
+                airplane_symbol_3 = "🛬"
+                airplane_symbol_4 = "🚁"
+                airplane_symbol_5 = "🛩️"
+                airplane_symbol_6 = "🛸"
+
+                #Print data
+                print("")
+                print(" " + airplane_symbol_2 + "  Scenario 1")
+                print()
+
+                #A321
+                print("    "+ airplane_symbol + "  A321neo")
+                if Flight_Number_A321neo_1<MNFPW1:
+                    print( str(Flight_Number_A321neo_1) + " flights will complete the task with a total cost of " + str(Cost_A321neo_1))
+                else:
+                    print(""" "NOT VIABLE" , because it requires """ + str(Flight_Number_A321neo_1) + """ flights to complete the task, which exceeds the maximum flight limit.""")
+                    Cost_A321neo_1 = 1e9
+
+                #A330
+                print()
+                print("    "+ airplane_symbol + "  A330-900neo")
+                if Flight_Number_A330_900neo_1<MNFPW1:
+                    print( str(Flight_Number_A330_900neo_1) + " flights will complete the task with a total cost of " + str(Cost_A330_900neo_1))
+                else:
+                    print(""" "NOT VIABLE" , because it requires """ + str(Flight_Number_A330_900neo_1) + """ flights to complete the task, which exceeds the maximum flight limit.""")
+                    Cost_A330_900neo_1 = 1e9
+                #A350
+                print()    
+                print("    "+ airplane_symbol + "  A350-900")
+                if Flight_Number_A350_900_1<MNFPW1:
+                    print( str(Flight_Number_A350_900_1) + " flights will complete the task with a total cost of " + str(Cost_A350_900_1))
+                else:
+                    print(""" "NOT VIABLE" , because it requires """ + str(Flight_Number_A350_900_1) + """ flights to complete the task, which exceeds the maximum flight limit.""")
+                    Cost_A350_900_1 = 1e9
+                
+                #Find minimum & print
+                print()
+                print()
+                print("    "+ airplane_symbol_3 + "  Result")
+                minimum = min(Cost_A321neo_1, Cost_A330_900neo_1, Cost_A350_900_1)
+                if minimum == Cost_A321neo_1:
+                    print(f'Choosing {Flight_Number_A321neo_1} flights of "A321neo" is the best solution, where the lowest cost is {Cost_A321neo_1}')
+                elif minimum == Cost_A330_900neo_1:
+                    print(f'Choosing {Flight_Number_A330_900neo_1} flights of "A330-900neo" is the best solution, where the lowest cost is {Cost_A330_900neo_1}')
+                elif minimum == Cost_A350_900_1:
+                    print(f'Choosing {Flight_Number_A350_900_1} flights of "A350-900" is the best solution, where the lowest cost is {Cost_A350_900_1}')
+
+
+                #Scenario 2
+                #Calculate flight numbers
+                if TPPW2 % PC321==0:
+                    Flight_Number_A321neo_2 = TPPW2 // PC321
+                else:
+                    Flight_Number_A321neo_2 = TPPW2 // PC321+1
+
+                if TPPW2 % PC330==0:
+                    Flight_Number_A330_900neo_2 = TPPW2 // PC330
+                else: Flight_Number_A330_900neo_2 = TPPW2 // PC330+1
+
+                if TPPW2 % PC350==0:
+                    Flight_Number_A350_900_2 = TPPW2 // PC350
+                else: Flight_Number_A350_900_2 = TPPW2 // PC350+1
+
+                #Calculate totol fee
+                Cost_A321neo_2 = (FC2 * FCR321 * TotalTime + CTH321 * TotalTime + FC321)*Flight_Number_A321neo_2
+                Cost_A330_900neo_2 = (FC2 * FCR330 * TotalTime + CTH330 * TotalTime + FC330)*Flight_Number_A330_900neo_2
+                Cost_A350_900_2 = (FC2 * FCR350 * TotalTime + CTH350 * TotalTime + FC350)*Flight_Number_A350_900_2
+
+                #Print
+                print()
+                print()
+                print("")
+                print(" " + airplane_symbol_2 + "  Scenario 2")
+                print()
+
+                #A321
+                print("    "+ airplane_symbol + "  A321neo")
+                if Flight_Number_A321neo_2<MNFPW2:
+                    print( str(Flight_Number_A321neo_2) + " flights will complete the task with a total cost of " + str(Cost_A321neo_2))
+                else:
+                    print(""" "NOT VIABLE" , because it requires """ + str(Flight_Number_A321neo_2) + """ flights to complete the task, which exceeds the maximum flight limit.""")
+                    Cost_A321neo_2 = 1e9
+
+                #A330
+                print()
+                print("    "+ airplane_symbol + "  A330-900neo")
+                if Flight_Number_A330_900neo_2<MNFPW2:
+                    print( str(Flight_Number_A330_900neo_2) + " flights will complete the task with a total cost of " + str(Cost_A330_900neo_2))
+                else:
+                    print(""" "NOT VIABLE" , because it requires """ + str(Flight_Number_A330_900neo_2) + """ flights to complete the task, which exceeds the maximum flight limit.""")
+                    Cost_A330_900neo_2 = 1e9
+
+                #A350
+                print()    
+                print("    "+ airplane_symbol + "  A350-900")
+                if Flight_Number_A350_900_2<MNFPW2:
+                    print( str(Flight_Number_A350_900_2) + " flights will complete the task with a total cost of " + str(Cost_A350_900_2))
+                else:
+                    print(""" "NOT VIABLE" , because it requires """ + str(Flight_Number_A350_900_2) + """ flights to complete the task, which exceeds the maximum flight limit.""")
+                    Cost_A350_900_2 = 1e9
+                
+                #Find minimum & print
+                print()
+                print()
+                print("    "+ airplane_symbol_3 + "  Result")
+                minimum = min(Cost_A321neo_2 , Cost_A330_900neo_2 , Cost_A350_900_2)
+                if minimum == Cost_A321neo_2:
+                    print(f'Choosing {Flight_Number_A321neo_2} flights of "A321neo" is the best solution, where the lowest cost is {Cost_A321neo_2}')
+                elif minimum == Cost_A330_900neo_2:
+                    print(f'Choosing {Flight_Number_A330_900neo_2} flights of "A330-900neo" is the best solution, where the lowest cost is {Cost_A330_900neo_2}')
+                elif minimum == Cost_A350_900_2:
+                    print(f'Choosing {Flight_Number_A350_900_2} flights of "A350-900" is the best solution, where the lowest cost is {Cost_A350_900_2}')
+                
+                #Scenario 3
+                #Calculate flight numbers
+                if TPPW3 % PC321==0:
+                    Flight_Number_A321neo_3 = TPPW3 // PC321
+                else:
+                    Flight_Number_A321neo_3 = TPPW3 // PC321+1
+
+                if TPPW3 % PC330==0:
+                    Flight_Number_A330_900neo_3 = TPPW3 // PC330
+                else: Flight_Number_A330_900neo_3 = TPPW3 // PC330+1
+
+                if TPPW3 % PC350==0:
+                    Flight_Number_A350_900_3 = TPPW3 // PC350
+                else: Flight_Number_A350_900_3 = TPPW3 // PC350+1
+
+                #Calculate totol fee
+                Cost_A321neo_3 = (FC3 * FCR321 * TotalTime + CTL321 * TotalTime + FC321)*Flight_Number_A321neo_3
+                Cost_A330_900neo_3 = (FC3 * FCR330 * TotalTime + CTL330 * TotalTime + FC330)*Flight_Number_A330_900neo_3
+                Cost_A350_900_3 = (FC3 * FCR350 * TotalTime + CTL350 * TotalTime + FC350)*Flight_Number_A350_900_3
+
+                #Print
+                print()
+                print()
+                print("")
+                print(" " + airplane_symbol_2 + "  Scenario 3")
+                print()
+
+                #A321
+                print("    "+ airplane_symbol + "  A321neo")
+                if Flight_Number_A321neo_3<MNFPW3:
+                    print( str(Flight_Number_A321neo_3) + " flights will complete the task with total cost of " + str(Cost_A321neo_3))
+                else:
+                    print(""" "NOT VIABLE" , because it requires """ + str(Flight_Number_A321neo_3) + """ flights to complete the task, which exceeds the maximum flight limit.""")
+                    Cost_A321neo_3 = 1e9
+
+                #A330
+                print()
+                print("    "+ airplane_symbol + "  A330-900neo")
+                if Flight_Number_A330_900neo_3<MNFPW3:
+                    print( str(Flight_Number_A330_900neo_3) + " flights will complete the task with a total cost of " + str(Cost_A330_900neo_3))
+                else:
+                    print(""" "NOT VIABLE" , because it requires """ + str(Flight_Number_A330_900neo_3) + """ flights to complete the task, which exceeds the maximum flight limit.""")
+                    Cost_A330_900neo_3 = 1e9
+
+                #A350
+                print()      
+                print("    "+ airplane_symbol + "  A350-900")
+                if Flight_Number_A350_900_3<MNFPW3:
+                    print( str(Flight_Number_A350_900_3) + " flights will complete the task with a total cost of " + str(Cost_A350_900_3))
+                else:
+                    print(""" "NOT VIABLE" , because it requires """ + str(Flight_Number_A350_900_3) + """ flights to complete the task, which exceeds the maximum flight limit.""")
+                    Cost_A350_900_3 = 1e9
+                               
+                #Find minimum & print
+                print()
+                print()
+                print("    "+ airplane_symbol_3 + "  Result")
+                minimum = min(Cost_A321neo_3 , Cost_A330_900neo_3 , Cost_A350_900_3)
+                if minimum == Cost_A321neo_3:
+                    print(f'Choosing {Flight_Number_A321neo_3} flights of "A321neo" is the best solution, where the lowest cost is {Cost_A321neo_3}')
+                elif minimum == Cost_A330_900neo_3:
+                    print(f'Choosing {Flight_Number_A330_900neo_3} flights of "A330-900neo" is the best solution, where the lowest cost is {Cost_A330_900neo_3}')
+                elif minimum == Cost_A350_900_3:
+                    print(f'Choosing {Flight_Number_A350_900_3} flights of "A350-900" is the best solution, where the lowest cost is {Cost_A350_900_3}')
+                break
+
                 break
 
             # Remove the item from the open set
