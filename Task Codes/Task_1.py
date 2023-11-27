@@ -102,9 +102,7 @@ class AStarPlanner:
                 plt.plot(self.calc_grid_position(current.x, self.min_x),
                          self.calc_grid_position(current.y, self.min_y), "xc")
                 # for stopping simulation with the esc key.
-                plt.gcf().canvas.mpl_connect('key_release_event',
-                                             lambda event: [exit(
-                                                 0) if event.key == 'escape' else None])
+                plt.gcf().canvas.mpl_connect('key_release_event',lambda event: [exit(0) if event.key == 'escape' else None])
                 if len(closed_set.keys()) % 10 == 0:
                     plt.pause(0.001)
 
@@ -529,7 +527,7 @@ def main():
     grid_size = 1  # [m]
     robot_radius = 1.0  # [m]
 
-    # set obstacle positions for group 9
+    # setting obstacle positions for group 9
     ox, oy = [], []
     for i in range(-10, 60): # draw the button border 
         ox.append(i)
@@ -548,7 +546,7 @@ def main():
         ox.append(20.0)
         oy.append(i)
 
-    #for i in range(0, 20):
+    #for i in range(0, 20): # For format reference
         #ox.append(i)
         #oy.append(-1 * i + 10)
 
@@ -562,7 +560,7 @@ def main():
         oy.append(-3 * a + 100)
         a = a + 0.3
 
-    b = 20 #Drawing free border obstacle
+    b = 20 #Drawing free border obstacle 
     while b <= 40:
         ox.append(b)
         oy.append(b + 20)
