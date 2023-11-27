@@ -94,9 +94,7 @@ class AStarPlanner:
 
             c_id = min(
                 open_set,
-                key=lambda o: open_set[o].cost + self.calc_heuristic(self, goal_node,
-                                                                     open_set[
-                                                                         o])) # g(n) and h(n): calculate the distance between the goal node and openset
+                key=lambda o: open_set[o].cost + self.calc_heuristic(self, goal_node,open_set[o])) # g(n) and h(n): calculate the distance between the goal node and openset
             current = open_set[c_id]
 
             # show graph
