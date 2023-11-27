@@ -22,7 +22,7 @@ show_animation = True
 
 class AStarPlanner:
 
-    def __init__(self, ox, oy, resolution, rr, fc_x, fc_y, tc_x, tc_y, js_x, js_y):
+    def __init__(self, ox, oy, resolution, rr, fc_x, fc_y, tc_x, tc_y):
         """
         Initialize grid map for a star planning
 
@@ -45,12 +45,10 @@ class AStarPlanner:
         self.fc_y = fc_y
         self.tc_x = tc_x
         self.tc_y = tc_y
-        self.js_x = js_x
-        self.js_y = js_y
+        
 
         self.Delta_C1 = 0.2 # cost intensive area 1 modifier
         self.Delta_C2 = 1 # cost intensive area 2 modifier
-        self.Delta_J = 0.05 # jet stream area modifier
 
         self.costPerGrid = 1 
 
@@ -80,7 +78,7 @@ class AStarPlanner:
             rx: x position list of the final path
             ry: y position list of the final path
         """
-        minimum = -1
+
         start_node = self.Node(self.calc_xy_index(sx, self.min_x), # calculate the index based on given position
                                self.calc_xy_index(sy, self.min_y), 0.0, -1) # set cost zero, set parent index -1
         goal_node = self.Node(self.calc_xy_index(gx, self.min_x), # calculate the index based on given position
@@ -114,119 +112,14 @@ class AStarPlanner:
 
             # reaching goal
             if current.x == goal_node.x and current.y == goal_node.y:
-                airplane_symbol_5 = "🛩️" #airplane symbol 5
-                print()
-                print( airplane_symbol_5 + "   Total Trip time required ➜ ",current.cost )
+                print("Total Trip time required -> ",current.cost )
                 goal_node.parent_index = current.parent_index
                 goal_node.cost = current.cost
-                TotalTime = current.cost
-
-                #For A321neo
-                FCR321 = 54 #Fuel Consumption Rate
-                PC321 = 200 #Passenger Capacity
-                CTL321 = 10 #Cost Time Low
-                CTM321 = 15 #Cost Time Medium 
-                CTH321 = 20 #Cost Time High
-                FC321 = 1800 #Fixed Cost
-
-                #For A330-900neo
-                FCR330 = 84 #Fuel Consumption Rate
-                PC330 = 300 #Passenger Capacity
-                CTL330 = 15 #Cost Time Low
-                CTM330 = 21 #Cost Time Medium 
-                CTH330 = 27 #Cost Time High
-                FC330 = 2000 #Fixed Cost
-
-                #For A350-900
-                FCR350 = 90 #Fuel Consumption Rate
-                PC350 = 350 #Passenger Capacity
-                CTL350 = 20 #Cost Time Low
-                CTM350 = 27 #Cost Time Medium 
-                CTH350 = 34 #Cost Time High
-                FC350 = 2500 #Fixed Cost
-
-                #Setup Scenarios
-
-                #Scenario 1
-                TPPW1 = 3000 #Total Passengers Per Week
-                MNFPW1 = 12 # Maximum number of flights per week
-                FC1 = 0.76 #Fuel Cost
-
-
-                #Scenario 1 
-                #Calculate flight numbers
-                if TPPW1 % PC321==0:
-                    Flight_Number_A321neo_1 = TPPW1 // PC321
-                else:
-                    Flight_Number_A321neo_1 = TPPW1 // PC321+1
-
-                if TPPW1 % PC330==0:
-                    Flight_Number_A330_900neo_1 = TPPW1 // PC330
-                else: Flight_Number_A330_900neo_1 = TPPW1 // PC330+1
-
-                if TPPW1 % PC350==0:
-                    Flight_Number_A350_900_1 = TPPW1 // PC350
-                else: Flight_Number_A350_900_1 = TPPW1 // PC350+1
-
-                #Calculate totol fee
-                Cost_A321neo_1 = (FC1 * FCR321 * TotalTime + CTM321 * TotalTime + FC321)*Flight_Number_A321neo_1
-                Cost_A330_900neo_1 = (FC1 * FCR330 * TotalTime + CTM330 * TotalTime + FC330)*Flight_Number_A330_900neo_1
-                Cost_A350_900_1 = (FC1 * FCR350 * TotalTime + CTM350 * TotalTime + FC350)*Flight_Number_A350_900_1
-
-                #Airplane Symbol
-                airplane_symbol = "✈"
-                airplane_symbol_2 = "🛫"
-                airplane_symbol_3 = "🛬"
-                airplane_symbol_4 = "🚁"
-                airplane_symbol_5 = "🛩️"
-                airplane_symbol_6 = "🛸"
-
-                #Print data
-                print("")
-                print(" " + airplane_symbol_2 + "  Scenario 1")
-                print()
-
-                #A321
-                print("    "+ airplane_symbol + "  A321neo")
-                if Flight_Number_A321neo_1<MNFPW1:
-                    print( str(Flight_Number_A321neo_1) + " flights will complete the task with a total cost of " + str(Cost_A321neo_1))
-                else:
-                    print(""" "NOT VIABLE" , because it requires """ + str(Flight_Number_A321neo_1) + """ flights to complete the task, which exceeds the maximum flight limit.""")
-                    Cost_A321neo_1 = 1e9
-
-                #A330
-                print()
-                print("    "+ airplane_symbol + "  A330-900neo")
-                if Flight_Number_A330_900neo_1<MNFPW1:
-                    print( str(Flight_Number_A330_900neo_1) + " flights will complete the task with a total cost of " + str(Cost_A330_900neo_1))
-                else:
-                    print(""" "NOT VIABLE" , because it requires """ + str(Flight_Number_A330_900neo_1) + """ flights to complete the task, which exceeds the maximum flight limit.""")
-                    Cost_A330_900neo_1 = 1e9
-                #A350
-                print()    
-                print("    "+ airplane_symbol + "  A350-900")
-                if Flight_Number_A350_900_1<MNFPW1:
-                    print( str(Flight_Number_A350_900_1) + " flights will complete the task with a total cost of " + str(Cost_A350_900_1))
-                else:
-                    print(""" "NOT VIABLE" , because it requires """ + str(Flight_Number_A350_900_1) + """ flights to complete the task, which exceeds the maximum flight limit.""")
-                    Cost_A350_900_1 = 1e9
-                
-                #Find minimum & print
-                print()
-                print()
-                print("    "+ airplane_symbol_3 + "  Result")
-                minimum = min(Cost_A321neo_1, Cost_A330_900neo_1, Cost_A350_900_1)
-                if minimum == Cost_A321neo_1:
-                    print(f'Choosing {Flight_Number_A321neo_1} flights of "A321neo" is the best solution, where the lowest cost is {Cost_A321neo_1}')
-                elif minimum == Cost_A330_900neo_1:
-                    print(f'Choosing {Flight_Number_A330_900neo_1} flights of "A330-900neo" is the best solution, where the lowest cost is {Cost_A330_900neo_1}')
-                elif minimum == Cost_A350_900_1:
-                    print(f'Choosing {Flight_Number_A350_900_1} flights of "A350-900" is the best solution, where the lowest cost is {Cost_A350_900_1}')
                 break
-
 
             # Remove the item from the open set
             del open_set[c_id]
+
             # Add it to the closed set
             closed_set[c_id] = current
 
@@ -250,13 +143,15 @@ class AStarPlanner:
                         # print("cost intensive area!!")
                         node.cost = node.cost + self.Delta_C2 * self.motion[i][2]
                     # print()
-                    
-                # reduce cost in jet stream area
-                if self.calc_grid_position(node.x, self.min_x) in self.js_x:
-                    if self.calc_grid_position(node.y, self.min_y) in self.js_y:
-                        # print("jet stream area!!")
-                        node.cost = node.cost - self.Delta_J * self.motion[i][2]
-                    # print()
+
+                if self.calc_grid_position(node.x, self.min_x) in [7]:
+                    if self.calc_grid_position(node.y, self.min_y) in [35]:  
+                        node.cost = 0
+
+                if self.calc_grid_position(node.x, self.min_x) in [32]:
+                    if self.calc_grid_position(node.y, self.min_y) in [13]:
+                        node.cost = 0
+
                 
                 n_id = self.calc_grid_index(node)
 
@@ -278,7 +173,7 @@ class AStarPlanner:
         # print(len(closed_set))
         # print(len(open_set))
 
-        return rx, ry, minimum
+        return rx, ry
 
     def calc_final_path(self, goal_node, closed_set):
         # generate final course
@@ -386,7 +281,7 @@ class AStarPlanner:
         return motion
 
 
-def main(js_start):
+def main():
     print(__file__ + " start the A star algorithm demo !!") # print simple notes
 
     # start and goal position
@@ -455,12 +350,7 @@ def main(js_start):
             fc_x.append(i)
             fc_y.append(j)
 
-    js_x, js_y = [], []
-    for i in range(-10, 60):
-        for j in range(js_start, js_start+5):
-            js_x.append(i)
-            js_y.append(j)
-    
+
     if show_animation:  # pragma: no cover
         plt.plot(ox, oy, ".k") # plot the obstacle
         plt.plot(sx, sy, "og") # plot the start position 
@@ -468,28 +358,21 @@ def main(js_start):
         
         plt.plot(fc_x, fc_y, "oy") # plot the cost intensive area 1
         plt.plot(tc_x, tc_y, "or") # plot the cost intensive area 2
-        
-        plt.plot(js_x, js_y, "ob")
 
         plt.grid(True) # plot the grid to the plot panel
         plt.axis("equal") # set the same resolution for x and y axis 
 
-    a_star = AStarPlanner(ox, oy, grid_size, robot_radius, fc_x, fc_y, tc_x, tc_y, js_x, js_y)
-    rx, ry, minimum = a_star.planning(sx, sy, gx, gy)
+    a_star = AStarPlanner(ox, oy, grid_size, robot_radius, fc_x, fc_y, tc_x, tc_y)
+    rx, ry = a_star.planning(sx, sy, gx, gy)
 
     if show_animation:  # pragma: no cover
         plt.plot(rx, ry, "-r") # show the route 
+        plt.plot(7, 35, "og")
+        plt.plot(32, 13, "og")
+
         plt.pause(0.001) # pause 0.001 seconds
         plt.show() # show the plot
-    return minimum
 
-test_results = []
-for i in range(-10, 55):
-    if __name__ == '__main__':
-        test_results.append(main(i))
 
-best_js_start = 0
-for i in range(0,65):
-    if test_results[i] < test_results[best_js_start]:
-        best_js_start = i
-print("\n\n\nBest place of the jet stream is from y" + (best_js_start-10) + " to " + (best_js_start-5) + "with the lowest cost of " + test_results[best_js_start])
+if __name__ == '__main__':
+    main()
