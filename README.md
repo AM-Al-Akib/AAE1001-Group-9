@@ -18,6 +18,6 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
-# You can follow the source of this README to complete your README Report 
-### Smaller Title
+# Task A1
+### Goal
 ##### Even smaller title
