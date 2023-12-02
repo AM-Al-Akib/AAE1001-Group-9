@@ -24,7 +24,7 @@
 
 # Task 2
 ### Goal
-To design a new jet stream are which reduce cost by 5%
+To design a new jet stream area which reduce cost by 5%
 
 ### Background
 The jet stream refers to a narrow and high-altitude air current in the atmosphere, where aircraft will consume less time and fuel whe crusing. It is characterized by high wind speeds and mainly formed due to temperature and pressure differences in the atmosphere. 
