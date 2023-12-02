@@ -12,17 +12,19 @@
 * [Task A3](#task-A3)
 * [Usage](#Usage)
 * [Reflections](#Reflections)
-* [Contacts](#contacts)
-* [Project Status](#project-status)
 
 
 ## About the project
+???
 
 ## Project Video
 
 [![IMAGE ALT TEXT HERE]()
 
-# Task 2
+## Task 1
+???
+
+## Task 2
 ### Goal
 To design a new jet stream area which reduce cost by 5%
 
@@ -48,6 +50,9 @@ This is the part we have added the jet stream area. We have set a range and choo
 
 For the results, we can conclude that after the use of the jet stream area, the total cost of A330-900 neo is around 85000 usd, while the total cost of A350-900 is around 88300 usd. Futhermore, we can know that A321 neo is not viable in thie scenario.
 
+## Task 3
+???
+
 # Task A1
 ### Goal
 1. To add one checkpoint for each cost intensive area(2 in total) 2. To reach all checkpoints before arriving at the destination.
@@ -70,3 +75,23 @@ At this stage, we will visualize the two checkpoints by marking them in green on
 ### Result
 
 ![gifv2](https://cdn.discordapp.com/attachments/901650593637101600/1180453332117102603/ezgif.com-video-to-gif.gif?ex=657d79d6&is=656b04d6&hm=aa91b17c198c49150713cf2cf5ca66f828cd572cd2cb770524516eaa91bcf6ea&)
+
+## Task A2
+???
+
+
+## Task A3
+???
+
+## Reflection
+**'s Reflection:**
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**'s Reflection:**
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**'s Reflection:**
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**'s Reflection:**
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**'s Reflection:**
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**'s Reflection:**
