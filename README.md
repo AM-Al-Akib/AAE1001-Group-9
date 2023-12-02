@@ -53,7 +53,7 @@ For the results, we can conclude that after the use of the jet stream area, the 
 ## Task 3
 ???
 
-# Task A1
+## Task A1
 ### Goal
 1. To add one checkpoint for each cost intensive area(2 in total) 2. To reach all checkpoints before arriving at the destination.
 
@@ -77,8 +77,44 @@ At this stage, we will visualize the two checkpoints by marking them in green on
 ![gifv2](https://cdn.discordapp.com/attachments/901650593637101600/1180453332117102603/ezgif.com-video-to-gif.gif?ex=657d79d6&is=656b04d6&hm=aa91b17c198c49150713cf2cf5ca66f828cd572cd2cb770524516eaa91bcf6ea&)
 
 ## Task A2
-???
+### Goal 
 
+To find the route of minimum cost when obstacles are generated randomly with reasonable density. 
+
+### Background 
+
+Assume the mission and the environment keep changing for each operation. 
+
+1. Only the fuel-consuming area remains and generate it randomly with a fixed area (40x40) 
+
+2. Diagonal movement is disabled, change parameter(s) so that the object could travel within one grid size 
+
+3. Obstacles are generated randomly with reasonable density 
+
+4. Destination and starting points are generated randomly with at least a 40-unit distance in-between 
+
+5. Plotting of the fuel-consuming area would not cover the obstacles, and obstacles should not generate at/near the start and end point 
+
+### Methodology 
+
+In the given scenario from Task 1, the obstacles are fixed and diagonal movement is allowed. But in this task, the diagonal movement is disabled and the obstacles are generated randomly. Therefore, the most challenging part for Additional Task 2 is to modify the code so that the obstacles and the fuel-consuming area can be generated appropriately. Meanwhile, the density of the obstacles must be appropriate. 
+
+### Results 
+![pic1]()
+
+![pic2]()
+
+![pic3]()
+
+### Discussion 
+
+If the obstacle density is too high, sometimes the route can not be found because there is no available route for the situation. ChatGPT provides a method to control the density. 
+
+![pic4]()
+
+Sometimes the obstacles may be generated on the position of the start or end nude, which could cause confusion to the code. Thus, the obstacles need to be modified. 
+
+![pic5]()
 
 ## Task A3
 ???
@@ -95,7 +131,8 @@ Additionally, contributing to the GitHub README has been an enjoyable aspect of 
 **LongYiqi's Reflection:**  It is a pretty surprise for me after heard the requirement from the professor. As a mainland student who just come less than half a year, the coding program is totally a strange area for me, as there is not any course that related to the python. Luckily, it is not necessary for us to do the entire coding, but just adjust some part in the text that professor given to us. After the group discussion, I realize that a complete rookie in coding can done this task if he is willing to learn few by himself. After changed some values and it run perfectly, I was so delighted at the time I successfully run the code. I also find coding is so interesting therefore spending some time to do research. As I am doing additional task 3 coding, it improved my technical skills and make me have more confidence on it. I really enjoy the group working and proud to be a member of this group. After this mission, I realized that coding is also an important and effective tool in aviation industry. I am appreciating to the experience in this group project and other group mates in this group, without them, I cannot done this task, gain more knowledge and meet more friends.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**'s Reflection:**
+**Xie TianZhuo's Reflection:** At the beginning, I was very stressful when I received the task, because I had had no such experience in typing code. Meanwhile, my computer got some technical issue that I couldn’t set the environment variables for Python. I tried several times but failed. VScode and ‘py -m pip’ helped me solve the problem.  with the help of ChatGPT, I made a successful attempt by sending the requirements to ChatGPT. ChatGPT provided an initial page of code with some mistakes, and I continued to type my instructions. Finally, the code became more and more completed and satisfied the requirements. From my point of view, ChatGPT played an very important role in the task-solving progress. I could not handle the whole task without the help of ChatGPT. From this task, I learn that I need to continue to learn more about 
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **'s Reflection:**
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
