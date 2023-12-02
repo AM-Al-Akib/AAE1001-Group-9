@@ -95,6 +95,9 @@ Without a doubt, BFS planning requires a considerably longer time compared to A 
 
 **Results for Dijkstra (sped up by x5)**:
 
+![Untitled ‑ Made with FlexClip (4)](https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149984998/e7d8e49a-0e90-4daa-92ee-018953bf76fb)
+
+
 After examining the outcomes of two different coding approaches, it can be concluded that Dijkstra's algorithm finds longer flight paths for the aircraft compared to A path planning, but it is significantly faster than BFS. Even with a 5x speed improvement, Dijkstra's algorithm still takes considerable time due to its extensive path searching. On the other hand, BFS, despite being sped up by 5x, requires even more time for calculations and finding the final path. Therefore, it is evident that A path planning is the optimal choice for our project. It efficiently reaches the goal point in the shortest possible manner. Hence, selecting A* path planning was the most suitable decision for our coding project.
 
 ## Reflection
