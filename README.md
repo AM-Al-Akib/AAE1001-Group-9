@@ -7,8 +7,9 @@
 * [Task 1](#task-1)
 * [Task 2](#task-2)
 * [Task 3](#task-3)
-* [Additional Task 2](#additional-task-2)
-* [Additional Task 3](#additional-task-3)
+* [Task A1](#task-A1)
+* [Task A2](#task-A2)
+* [Task A3](#task-A3)
 * [Usage](#Usage)
 * [Reflections](#Reflections)
 * [Contacts](#contacts)
@@ -46,6 +47,7 @@ This is the part we have added the jet stream area. We have set a range and choo
 ![螢幕截圖 2023-12-02 下午1 55 32](https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/841aec23-7572-4cfd-abc5-3834415668bf)
 
 For the results, we can conclude that after the use of the jet stream area, the total cost of A330-900 neo is around 85000 usd, while the total cost of A350-900 is around 88300 usd. Futhermore, we can know that A321 neo is not viable in thie scenario.
+
 # Task A1
 ### Goal
 1. To add one checkpoint for each cost intensive area(2 in total) 2. To reach all checkpoints before arriving at the destination.
