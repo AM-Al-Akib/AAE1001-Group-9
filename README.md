@@ -63,4 +63,6 @@ To ensure the A* search algorithm routes the aircraft through the required check
 
 At this stage, we will visualize the two checkpoints by marking them in green on the plot.
 
+### Result
+
 ![gifv2](https://cdn.discordapp.com/attachments/901650593637101600/1180453332117102603/ezgif.com-video-to-gif.gif?ex=657d79d6&is=656b04d6&hm=aa91b17c198c49150713cf2cf5ca66f828cd572cd2cb770524516eaa91bcf6ea&)
