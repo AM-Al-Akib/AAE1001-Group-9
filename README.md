@@ -121,6 +121,23 @@ Sometimes the obstacles may be generated on the position of the start or end nud
 
 ## Reflection
 
+
+**AL AKIB Ahmad Munjir's Reflection:** The path planning project was a real rollercoaster, especially given my role as the group leader. Initially, the whole coding seemed like a daunting task, especially since my teammates had no experience in coding, and I did not have any prior experience with path planning. However, leading the group required more than coding skills; it demanded effective management to ensure we did not crash and burn.
+
+Being the leader meant more than just keeping an eye on coding tasks. It meant understanding the strengths and weaknesses of each team member and dishing out responsibilities accordingly. Real talk – not everyone was a coding whiz, so I played smart while coding by getting help from AIs when I couldn’t understand the format or logic behind something. This made coding less of a nightmare.
+
+While leading my group, project management became my new best friend. Organizing the team, setting targets, and throwing deadlines on the table became necessary. Though I couldn't start the project as planned because of a lack of communication issues with my group mates, I was fortunate to start and finish before the deadline. Breaking down the GitHub project into smaller tasks for the team was my way of making sure everyone could chip in.
+
+While the main focus was on coding, the project took us into the nitty-gritty of aviation knowledge and industry terms. Embracing the idea of continuous learning, I dove headfirst into challenges, gaining a deeper understanding of Python coding and the complexities of aviation path planning.
+
+Choosing to work with existing code and a bit of project juggling turned what could have been a coding nightmare into a collaborative learning adventure. It wasn't just about meeting coding requirements; it was about appreciating the intricacies of aviation path planning.
+
+To sum it up, the path planning project was a wild ride that taught me more than just coding. After the experience of leading this group, it was not like just a walk in the garden. Instead, I had to handle many things that were not meant to be initially dealt by me. Still, as mentioned before, my teammates had no coding experience, so I had to do many things while keeping in mind the deadline, but after all, I'm thankful for the team's support and contributions. Together, we ticked off the project's goals, and I tried to maintain a positive learning space.
+
+I look forward to having more learning experiences like this path-planning project in the future.
+Then, I hope I’ll be able to reflect on what I learned here. And in this way, I want to increase my understanding of the nitty-gritty of aviation knowledge and industry terms.
+
+
 **Leung Siu Kwan's Reflection:** The objective of my assignment is to develop an add-on for the code created in Task 1, presenting a blend of straightforward tasks and engaging challenges. The simplicity lies in the foundation provided by the pre-existing code, which spares me from starting from scratch and allows me to focus on modifying and enhancing specific sections. Conversely, the complexity emerges from the necessity to meticulously review and comprehend the original code to determine the precise areas that require adjustments. The analytical process of dissecting the entire codebase is intellectually gratifying, especially when I achieve a thorough understanding of its mechanics and successfully integrate my contributions.
 Additionally, contributing to the GitHub README has been an enjoyable aspect of the project. There's a certain pleasure in committing incremental changes and observing the evolution of the document over time. Witnessing the culmination of these small, yet significant, contributions into a comprehensive final product is immensely satisfying. This experience not only enhances my technical skills but also provides a sense of accomplishment in the collaborative and iterative nature of coding.
 
