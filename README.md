@@ -1,5 +1,28 @@
 # AAE1001-Group-9
 
+## Members
+
+**Leader:** 
+AL AKIB Ahmad Munjir - "AM-Al-Akib"
+
+**Member 2:** 
+x - "x"
+
+**Member 3:** 
+x - "x"
+
+**Member 4:**
+x - "x"
+
+**Member 5:**
+x - "x"
+
+**Member 6:**
+x - "x"
+
+**Member 7:**
+Missing!!!!!
+
 ## Content
 
 * [About Path Planning in Aviation](#about-path-planning-in-aviation)
