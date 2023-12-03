@@ -9,7 +9,7 @@ AL AKIB Ahmad Munjir - "AM-Al-Akib"
 x - "x"
 
 **Member 3:** 
-x - "x"
+Ni Shuyu - "nishuyu"
 
 **Member 4:**
 x - "x"
