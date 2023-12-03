@@ -34,7 +34,6 @@ Missing!!!!!
 * [Task A1](#task-A1)
 * [Task A2](#task-A2)
 * [Task A3](#task-A3)
-* [Usage](#Usage)
 * [Reflections](#Reflections)
 
 
@@ -320,8 +319,6 @@ At the beginning, I was very stressful when I received the task, because I had h
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ###'s Reflection:
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
 ## References
 
 [1]A. Montazeri, A. Can, and I. H. Imran, “Unmanned aerial systems: Autonomy, cognition, and Control,” Unmanned Aerial Systems, pp. 47–80, 2021. 
