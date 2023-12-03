@@ -12,7 +12,7 @@ Chik Long Tin - "kakachik"
 Ni Shuyu - "nishuyu"
 
 **Member 4:**
-x - "x"
+Leung Siu Kwan - "230Jonas"
 
 **Member 5:**
 x - "x"
