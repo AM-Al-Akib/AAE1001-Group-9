@@ -212,15 +212,15 @@ In the given scenario from Task 1, the obstacles are fixed, and diagonal movemen
 
 ### Results 
 <p align = "middle">
-  <img src = "https://cdn.discordapp.com/attachments/901650593637101600/1180835418372067381/WhatsApp_Image_2023-12-03_at_19.38.05.jpeg?ex=657eddae&is=656c68ae&hm=b59d45db6e3e270ce2eb30e92d549683989346ac540785dbeaff9d9baa1ccb9b&" alt = "animated" width = 600 height = 300/>
+  <img src = "https://cdn.discordapp.com/attachments/901650593637101600/1180835418372067381/WhatsApp_Image_2023-12-03_at_19.38.05.jpeg?ex=657eddae&is=656c68ae&hm=b59d45db6e3e270ce2eb30e92d549683989346ac540785dbeaff9d9baa1ccb9b&" alt = "animated" width = 600 height = 450/>
   </p>
 
 <p align = "middle">
-  <img src = "https://cdn.discordapp.com/attachments/901650593637101600/1180835557098651698/WhatsApp_Image_2023-12-03_at_19.38.30.jpeg?ex=657eddcf&is=656c68cf&hm=50092bc6f867fdbfb59a7c6a237cae06c895294b64e3ac580a3f99e28314ff02&" alt = "animated" width = 600 height = 300/>
+  <img src = "https://cdn.discordapp.com/attachments/901650593637101600/1180835557098651698/WhatsApp_Image_2023-12-03_at_19.38.30.jpeg?ex=657eddcf&is=656c68cf&hm=50092bc6f867fdbfb59a7c6a237cae06c895294b64e3ac580a3f99e28314ff02&" alt = "animated" width = 600 height = 450/>
   </p>
 
 <p align = "middle">
-  <img src = "https://cdn.discordapp.com/attachments/901650593637101600/1180835761818439811/WhatsApp_Image_2023-12-03_at_19.39.02.jpeg?ex=657ede00&is=656c6900&hm=8bd8502c0bf73ab522eadd312d03b4773109222d1982b2a988e9924ee341ab0b&" alt = "animated" width = 600 height = 300/>
+  <img src = "https://cdn.discordapp.com/attachments/901650593637101600/1180835761818439811/WhatsApp_Image_2023-12-03_at_19.39.02.jpeg?ex=657ede00&is=656c6900&hm=8bd8502c0bf73ab522eadd312d03b4773109222d1982b2a988e9924ee341ab0b&" alt = "animated" width = 600 height = 450/>
   </p>
 
 ### Discussion 
