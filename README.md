@@ -72,7 +72,9 @@ For the first task, we need to find the most cost-effective aircraft for three d
   The most suitable aircraft for the first, second, and third scenarios are the A330, A350, and A330, respectively.
   
   Task 1 - Scenario 1 Code:
-  <img> S1.png </img>
+  <p align = "middle">
+  <img src = "S1.png" alt = "animated" width = 600 height = 300/>
+  </p>
   
 
   Result for scenario 1:
