@@ -242,7 +242,7 @@ If the obstacle density is too high, sometimes the route can not be found becaus
 
 Sometimes obstacles may be generated on the position of the start or end nude, which could cause confusion to the code. Thus, the obstacles need to be modified. 
 
-![pic5]()
+![pic5](https://cdn.discordapp.com/attachments/901650593637101600/1180835797109313576/WhatsApp_Image_2023-12-03_at_19.39.34.jpeg?ex=657ede08&is=656c6908&hm=d9c2d52f3345a98556c072e235928efc9b5170c9b868da98c24b2e66084c9f1f&)
 
 ## Task A3
 
