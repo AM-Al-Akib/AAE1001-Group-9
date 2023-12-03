@@ -228,17 +228,17 @@ Assume the mission and the environment keep changing for each operation.
 In the given scenario from Task 1, the obstacles are fixed, and diagonal movement is allowed. However, in this task, the diagonal movement is disabled, and the obstacles are generated randomly. Therefore, the most challenging part of Additional Task 2 is to modify the code so that the obstacles and the fuel-consuming area can be generated appropriately. Meanwhile, the density of the obstacles must be appropriate. 
 
 ### Results 
-![pic1]()
+![pic1](https://cdn.discordapp.com/attachments/901650593637101600/1180835418372067381/WhatsApp_Image_2023-12-03_at_19.38.05.jpeg?ex=657eddae&is=656c68ae&hm=b59d45db6e3e270ce2eb30e92d549683989346ac540785dbeaff9d9baa1ccb9b&)
 
-![pic2]()
+![pic2](https://cdn.discordapp.com/attachments/901650593637101600/1180835557098651698/WhatsApp_Image_2023-12-03_at_19.38.30.jpeg?ex=657eddcf&is=656c68cf&hm=50092bc6f867fdbfb59a7c6a237cae06c895294b64e3ac580a3f99e28314ff02&)
 
-![pic3]()
+![pic3](https://cdn.discordapp.com/attachments/901650593637101600/1180835761818439811/WhatsApp_Image_2023-12-03_at_19.39.02.jpeg?ex=657ede00&is=656c6900&hm=8bd8502c0bf73ab522eadd312d03b4773109222d1982b2a988e9924ee341ab0b&)
 
 ### Discussion 
 
 If the obstacle density is too high, sometimes the route can not be found because there is no available route for the situation. ChatGPT provides a method to control the density. 
 
-![pic4]()
+![pic4](https://cdn.discordapp.com/attachments/901650593637101600/1180835778302066708/WhatsApp_Image_2023-12-03_at_19.39.20.jpeg?ex=657ede04&is=656c6904&hm=64292906d4bd997abd8002f1763d1f914dbaa8a36f930d7e0f7e88b29f699f74&)
 
 Sometimes obstacles may be generated on the position of the start or end nude, which could cause confusion to the code. Thus, the obstacles need to be modified. 
 
