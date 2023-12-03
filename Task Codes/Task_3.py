@@ -151,11 +151,11 @@ class AStarPlanner:
                     
                 Nbest = math.ceil(TPPW /bestpassengers) # number of flights with best number of passengers
                 if bestpassengers >= 300:
-                    print("Total Cost of Four Engine B747 ➜ ",lowest)
-                    print("Total Passenger Capacity of B747 ➜ ",bestpassengers)
+                    print("Total Cost of Four Engine G911 ➜ ",lowest)
+                    print("Total Passenger Capacity of G911 ➜ ",bestpassengers)
                 else:
-                    print("Total Cost of Twin Engine B747 ➜ ",lowest)
-                    print("Total Passenger Capacity of B747 ➜",bestpassengers)       
+                    print("Total Cost of Twin Engine G911 ➜ ",lowest)
+                    print("Total Passenger Capacity of G911 ➜",bestpassengers)       
                 break
 
             # Remove the item from the open set
