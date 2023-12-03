@@ -35,6 +35,7 @@ Missing!!!!!
 * [Task A2](#task-A2)
 * [Task A3](#task-A3)
 * [Reflections](#Reflections)
+* [References](#References)
 
 
 ## About Path Planning in Aviation
