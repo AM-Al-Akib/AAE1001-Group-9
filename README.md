@@ -18,7 +18,7 @@ Leung Siu Kwan - "230Jonas"
 x - "x"
 
 **Member 6:**
-x - "x"
+LongYiqi - "longyiqi"
 
 **Member 7:**
 Missing!!!!!
