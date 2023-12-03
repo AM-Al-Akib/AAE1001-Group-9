@@ -6,7 +6,7 @@
 AL AKIB Ahmad Munjir - "AM-Al-Akib"
 
 **Member 2:** 
-x - "x"
+Chik Long Tin - "kakachik"
 
 **Member 3:** 
 Ni Shuyu - "nishuyu"
