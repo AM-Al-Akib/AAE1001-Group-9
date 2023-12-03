@@ -2,8 +2,8 @@
 
 ## Content
 
-* [About Path Planning in Aviation](#about-the-project)
-* [Theory of Path Planning Algorithm]
+* [About Path Planning in Aviation](#about-path-planning-in-aviation)
+* [Theory of Path Planning Algorithm](#theory-of-path-planning-algorithm)
 * [Project Video](#Project-Video)
 * [Task 1](#task-1)
 * [Task 2](#task-2)
