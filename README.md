@@ -20,40 +20,44 @@ Ensuring cost efficiency and passenger satisfaction stands as a pivotal determin
 
 Beyond diplomatic considerations, the aviation industry grapples with physical obstacles that impact flight paths. These include formidable barriers such as high terrains, ranging from hills to mountains, areas afflicted by adverse weather conditions, and even towering skyscrapers that can impose constraints on an aircraft's mobility during takeoff and landing. 
 
-The crux of this project lies in the pursuit of identifying the most efficient pathway for a flight, navigating through a maze of real-world challenges. Leveraging cutting-edge technologies and methodologies, we aim to optimize flight paths under diverse circumstances, ensuring a harmonious blend of safety, cost-effectiveness, and passenger convenience.
+The crux of this project lies in the pursuit of identifying the most efficient pathway for a flight navigating through a maze of real-world challenges. Leveraging cutting-edge technologies and methodologies, we aim to optimize flight paths under diverse circumstances, ensuring a harmonious blend of safety, cost-effectiveness, and passenger convenience.
 
 
 ## Theory of Path Planning Algorithm
-  Navigating through path planning constitutes a pivotal challenge in robotics research, with its solutions proving instrumental across diverse fields. The application of path planning spans from guiding robots towards specific objectives, involving tasks as straightforward as trajectory planning to the intricacies of selecting a well-suited sequence of actions. The implementation of apt algorithms plays a key role, enabling the broad applicability of path planning in both partially known and unknown structured environments.
+  Navigating through path planning constitutes a pivotal challenge in robotics research, with its solutions proving instrumental across diverse fields. The application of path planning spans from guiding robots towards specific objectives involving tasks as straightforward as trajectory planning to the intricacies of selecting a well-suited sequence of actions. The implementation of apt algorithms plays a key role, enabling the broad applicability of path planning in both partially known and unknown structured environments.
 
 Local path planning, a significant facet, involves the generation of paths by assimilating data from sensors while the robot is in motion. This dynamic process empowers the robot to adapt and generate new paths based on real-time environmental data, enhancing its practical utility. In essence, local path planning ensures adaptability in navigating through changing surroundings.
 
-Four paramount trade-off criteria are essential considerations in any path planning algorithm. Optimization, completeness, precision, and execution time stand as key pillars shaping the efficacy of a path planning approach [1]. Striking a balance among these criteria is crucial for developing path planning solutions that are not only effective but also efficient in real-world applications.
+Four paramount trade-off criteria are essential considerations in any path-planning algorithm. Optimization, completeness, precision, and execution time stand as key pillars shaping the efficacy of a path-planning approach [1]. Striking a balance among these criteria is crucial for developing path-planning solutions that are not only effective but also efficient in real-world applications.
 
 ## Project Video
 
 [![IMAGE ALT TEXT HERE]()
 
 ## Task 1
-???
+**Goal**: To find an appropriate aircraft model that can achieve minimum cost for each given scenario. 
+**Methodology**: 
+For the first task, for three different scenarios, we need to find the most cost-effective aircraft. To solve this task, first, we changed the codes of the borders of the cost-intensive areas to match them with our scenarios. Then we added the conditions of the three scenarios provided and that of the aircraft in our code. After that, we added a calculating system in our code so that it could automatically calculate how much cost each aircraft would have by analyzing all the data we provided.
+
+This is the most efficient flight plan that our group has formulated.
 
 ## Task 2
 ### Goal
-To design a new jet stream area which reduce cost by 5%
+To design a new jet stream area which reduces cost by 5%
 
 ### Background
-The jet stream refers to a narrow and high-altitude air current in the atmosphere, where aircraft will consume less time and fuel whe crusing. It is characterized by high wind speeds and mainly formed due to temperature and pressure differences in the atmosphere. 
+The jet stream refers to a narrow and high-altitude air current in the atmosphere, where aircraft will consume less time and fuel while cruising. It is characterized by high wind speeds and is mainly formed due to temperature and pressure differences in the atmosphere. 
 
 ![image](https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/2c6b234c-0052-4c29-88b9-1a68ca1a8570)
 
 ### Methodology
-With the scenario same as Task 1 as the background, we need to find the specific area to set the jet stream where the cost of flight cab reduced by 5%。 The specific area is also required to span across the map laterally and span 5-unit length vertically.
+With the scenario same as Task 1 as the background, we need to find the specific area to set the jet stream where the cost of flight cab is reduced by 5%。 The specific area is also required to span across the map laterally and span a 5-unit length vertically.
 
 ### Coding section
 
 ![螢幕截圖 2023-12-02 下午1 56 24](https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/c912c74d-693a-4e57-b7d3-2392c5bc9c80)
 
-This is the part we have added the jet stream area. We have set a range and choose the best area for jet stream base on the best value.
+This is the part where we have added the jet stream area. We have set a range and chosen the best area for the jet stream based on the best value.
 
 ### Results
 
@@ -61,25 +65,25 @@ This is the part we have added the jet stream area. We have set a range and choo
 
 ![螢幕截圖 2023-12-02 下午1 55 32](https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/841aec23-7572-4cfd-abc5-3834415668bf)
 
-For the results, we can conclude that after the use of the jet stream area, the total cost of A330-900 neo is around 85000 usd, while the total cost of A350-900 is around 88300 usd. Futhermore, we can know that A321 neo is not viable in thie scenario.
+For the results, we can conclude that after the use of the jet stream area, the total cost of A330-900 neo is around 85000 USD, while the total cost of A350-900 is around 88300 USD. Furthermore, we can know that A321 neo is not viable in this scenario.
 
 ## Task 3
 ???
 
 ## Task A1
 ### Goal
-1. To add one checkpoint for each cost intensive area(2 in total) 2. To reach all checkpoints before arriving at the destination.
+1. To add one checkpoint for each cost-intensive area(2 in total) 2. To reach all checkpoints before arriving at the destination.
 
 ### Background
-The primary goal is to deliver essential supplies to two separate locations. These supplies could range from medical and food supplies to technical equipment or humanitarian aid. Precise planning is essential, involving precise calculations for fuel, timing, and the safest and most efficient routes to reach the drop-off points and return to base. The primary mission of the supply craft is the swift and efficient delivery of crucial supplies to two high-priority, cost-intensive areas. Central to this mission is the strategic route planning, which focuses on creating the most direct and practical path between these checkpoints. This optimized routing is key to minimizing travel time and fuel consumption, ensuring the prompt delivery of essential items like medical and food supplies, and technical or humanitarian aid.
+The primary goal is to deliver essential supplies to two separate locations. These supplies could range from medical and food supplies to technical equipment or humanitarian aid. Precise planning is essential, involving precise calculations for fuel, timing, and the safest and most efficient routes to reach the drop-off points and return to base. The primary mission of the supply craft is the swift and efficient delivery of crucial supplies to two high-priority, cost-intensive areas. Central to this mission is strategic route planning, which focuses on creating the most direct and practical path between these checkpoints. This optimized routing is key to minimizing travel time and fuel consumption, ensuring the prompt delivery of essential items like medical and food supplies and technical or humanitarian aid.
 
 ### Methodology 
-In the given scenario from Task 1, our objective is to refine an existing pathfinding algorithm to automatically incorporate two designated checkpoints within cost-intensive areas. Modify our pathfinding algorithm to include these checkpoints as required waypoints. Once the optimal route is calculated, it should be visualized on the graph. This typically involves plotting the route over a map or graph, with checkpoints and cost-intensive areas clearly marked.
+In the given scenario from Task 1, our objective is to refine an existing pathfinding algorithm to incorporate two designated checkpoints within cost-intensive areas automatically. Modify our pathfinding algorithm to include these checkpoints as required waypoints. Once the optimal route is calculated, it should be visualized on the graph. This typically involves plotting the route over a map or graph, with checkpoints and cost-intensive areas clearly marked.
 
 ### Coding section
 ![node.cost](https://cdn.discordapp.com/attachments/901650593637101600/1180256309937963170/Screenshot_2023-12-02_032347.png?ex=657cc258&is=656a4d58&hm=cc2ea909e64dd01faad2074e13848b21cdc2f650c5e333bc11a03f1f0f14a2d2&)
 
-To ensure the A* search algorithm routes the aircraft through the required checkpoints, we modify the 'self.fc_' attribute to represent the x and y coordinates of the two designated checkpoints. By setting the 'node.cost' to zero for these checkpoints, the algorithm is compelled to prioritize these waypoints, effectively guiding the aircraft through these specific locations without adding additional cost to the pathfinding calculation. This strategic adjustment allows the algorithm to seamlessly integrate the required checkpoints into the optimal route.
+To ensure the A* search algorithm routes the aircraft through the required checkpoints, we modify the 'self.fc_' attribute to represent the x and y coordinates of the two designated checkpoints. By setting the 'node.cost' to zero for these checkpoints, the algorithm is compelled to prioritize these waypoints, effectively guiding the aircraft through these specific locations without adding additional cost to the pathfinding calculation. This strategic adjustment allows the algorithm to integrate the required checkpoints into the optimal route seamlessly.
 
 ![plot](https://cdn.discordapp.com/attachments/901650593637101600/1180256309669544148/Screenshot_2023-12-02_032418.png?ex=657cc258&is=656a4d58&hm=76deb31ab3644f67f6e21bdabb1ff073fc6cae677acc6b5b18512a821c78374c&)
 
@@ -98,7 +102,7 @@ To find the route of minimum cost when obstacles are generated randomly with rea
 
 Assume the mission and the environment keep changing for each operation. 
 
-1. Only the fuel-consuming area remains and generate it randomly with a fixed area (40x40) 
+1. Only the fuel-consuming area remains and generates it randomly with a fixed area (40x40) 
 
 2. Diagonal movement is disabled, change parameter(s) so that the object could travel within one grid size 
 
@@ -106,11 +110,11 @@ Assume the mission and the environment keep changing for each operation.
 
 4. Destination and starting points are generated randomly with at least a 40-unit distance in-between 
 
-5. Plotting of the fuel-consuming area would not cover the obstacles, and obstacles should not generate at/near the start and end point 
+5. Plotting of the fuel-consuming area would not cover the obstacles, and obstacles should not be generated at/near the start and end point 
 
 ### Methodology 
 
-In the given scenario from Task 1, the obstacles are fixed and diagonal movement is allowed. But in this task, the diagonal movement is disabled and the obstacles are generated randomly. Therefore, the most challenging part for Additional Task 2 is to modify the code so that the obstacles and the fuel-consuming area can be generated appropriately. Meanwhile, the density of the obstacles must be appropriate. 
+In the given scenario from Task 1, the obstacles are fixed, and diagonal movement is allowed. However, in this task, the diagonal movement is disabled, and the obstacles are generated randomly. Therefore, the most challenging part of Additional Task 2 is to modify the code so that the obstacles and the fuel-consuming area can be generated appropriately. Meanwhile, the density of the obstacles must be appropriate. 
 
 ### Results 
 ![pic1]()
@@ -125,7 +129,7 @@ If the obstacle density is too high, sometimes the route can not be found becaus
 
 ![pic4]()
 
-Sometimes the obstacles may be generated on the position of the start or end nude, which could cause confusion to the code. Thus, the obstacles need to be modified. 
+Sometimes obstacles may be generated on the position of the start or end nude, which could cause confusion to the code. Thus, the obstacles need to be modified. 
 
 ![pic5]()
 
@@ -133,7 +137,7 @@ Sometimes the obstacles may be generated on the position of the start or end nud
 
 **Goal**: To test other unalike algorithms for finding the most efficient path.
 
-**Methodology**: We have to choose additional 2 different algorithms from the GitHub platform and compare all 3 codes with outcomes together, with the same obstacle deisgn.
+**Methodology**: We have to choose 2 additional different algorithms from the GitHub platform and compare all 3 codes with outcomes together, with the same obstacle design.
 
 **Result for BFS (sped up by x5)**:
 
