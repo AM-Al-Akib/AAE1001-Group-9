@@ -191,10 +191,9 @@ In the given scenario from Task 1, our objective is to refine an existing pathfi
 To ensure the A* search algorithm routes the aircraft through the required checkpoints, we modify the 'self.fc_' attribute to represent the x and y coordinates of the two designated checkpoints. By setting the 'node.cost' to zero for these checkpoints, the algorithm is compelled to prioritize these waypoints, effectively guiding the aircraft through these specific locations without adding additional cost to the pathfinding calculation. This strategic adjustment allows the algorithm to integrate the required checkpoints into the optimal route seamlessly.
 
 <p align = "middle">
-  <img src = "https://cdn.discordapp.com/attachments/901650593637101600/1180256309669544148/Screenshot_2023-12-02_032418.png?ex=657cc258&is=656a4d58&hm=76deb31ab3644f67f6e21bdabb1ff073fc6cae677acc6b5b18512a821c78374c&" alt = "animated" width = 600 height = 100/>
+  <img src = "https://cdn.discordapp.com/attachments/901650593637101600/1180256309669544148/Screenshot_2023-12-02_032418.png?ex=657cc258&is=656a4d58&hm=76deb31ab3644f67f6e21bdabb1ff073fc6cae677acc6b5b18512a821c78374c&" alt = "animated" width = 600 height = 200/>
   </p>
 
-![plot]()
 
 At this stage, we will visualize the two checkpoints by marking them in green on the plot.
 
@@ -228,21 +227,31 @@ Assume the mission and the environment keep changing for each operation.
 In the given scenario from Task 1, the obstacles are fixed, and diagonal movement is allowed. However, in this task, the diagonal movement is disabled, and the obstacles are generated randomly. Therefore, the most challenging part of Additional Task 2 is to modify the code so that the obstacles and the fuel-consuming area can be generated appropriately. Meanwhile, the density of the obstacles must be appropriate. 
 
 ### Results 
-![pic1](https://cdn.discordapp.com/attachments/901650593637101600/1180835418372067381/WhatsApp_Image_2023-12-03_at_19.38.05.jpeg?ex=657eddae&is=656c68ae&hm=b59d45db6e3e270ce2eb30e92d549683989346ac540785dbeaff9d9baa1ccb9b&)
+<p align = "middle">
+  <img src = "https://cdn.discordapp.com/attachments/901650593637101600/1180835418372067381/WhatsApp_Image_2023-12-03_at_19.38.05.jpeg?ex=657eddae&is=656c68ae&hm=b59d45db6e3e270ce2eb30e92d549683989346ac540785dbeaff9d9baa1ccb9b&" alt = "animated" width = 600 height = 100/>
+  </p>
 
-![pic2](https://cdn.discordapp.com/attachments/901650593637101600/1180835557098651698/WhatsApp_Image_2023-12-03_at_19.38.30.jpeg?ex=657eddcf&is=656c68cf&hm=50092bc6f867fdbfb59a7c6a237cae06c895294b64e3ac580a3f99e28314ff02&)
+<p align = "middle">
+  <img src = "https://cdn.discordapp.com/attachments/901650593637101600/1180835557098651698/WhatsApp_Image_2023-12-03_at_19.38.30.jpeg?ex=657eddcf&is=656c68cf&hm=50092bc6f867fdbfb59a7c6a237cae06c895294b64e3ac580a3f99e28314ff02&" alt = "animated" width = 600 height = 100/>
+  </p>
 
-![pic3](https://cdn.discordapp.com/attachments/901650593637101600/1180835761818439811/WhatsApp_Image_2023-12-03_at_19.39.02.jpeg?ex=657ede00&is=656c6900&hm=8bd8502c0bf73ab522eadd312d03b4773109222d1982b2a988e9924ee341ab0b&)
+<p align = "middle">
+  <img src = "https://cdn.discordapp.com/attachments/901650593637101600/1180835761818439811/WhatsApp_Image_2023-12-03_at_19.39.02.jpeg?ex=657ede00&is=656c6900&hm=8bd8502c0bf73ab522eadd312d03b4773109222d1982b2a988e9924ee341ab0b&" alt = "animated" width = 600 height = 100/>
+  </p>
 
 ### Discussion 
 
 If the obstacle density is too high, sometimes the route can not be found because there is no available route for the situation. ChatGPT provides a method to control the density. 
 
-![pic4](https://cdn.discordapp.com/attachments/901650593637101600/1180835778302066708/WhatsApp_Image_2023-12-03_at_19.39.20.jpeg?ex=657ede04&is=656c6904&hm=64292906d4bd997abd8002f1763d1f914dbaa8a36f930d7e0f7e88b29f699f74&)
+<p align = "middle">
+  <img src = "https://cdn.discordapp.com/attachments/901650593637101600/1180835778302066708/WhatsApp_Image_2023-12-03_at_19.39.20.jpeg?ex=657ede04&is=656c6904&hm=64292906d4bd997abd8002f1763d1f914dbaa8a36f930d7e0f7e88b29f699f74&" alt = "animated" width = 600 height = 100/>
+  </p>
 
 Sometimes obstacles may be generated on the position of the start or end nude, which could cause confusion to the code. Thus, the obstacles need to be modified. 
 
-![pic5](https://cdn.discordapp.com/attachments/901650593637101600/1180835797109313576/WhatsApp_Image_2023-12-03_at_19.39.34.jpeg?ex=657ede08&is=656c6908&hm=d9c2d52f3345a98556c072e235928efc9b5170c9b868da98c24b2e66084c9f1f&)
+<p align = "middle">
+  <img src = "https://cdn.discordapp.com/attachments/901650593637101600/1180835797109313576/WhatsApp_Image_2023-12-03_at_19.39.34.jpeg?ex=657ede08&is=656c6908&hm=d9c2d52f3345a98556c072e235928efc9b5170c9b868da98c24b2e66084c9f1f&" alt = "animated" width = 600 height = 100/>
+  </p>
 
 ## Task A3
 
@@ -316,3 +325,4 @@ At the beginning, I was very stressful when I received the task, because I had h
 ## References
 
 [1]A. Montazeri, A. Can, and I. H. Imran, “Unmanned aerial systems: Autonomy, cognition, and Control,” Unmanned Aerial Systems, pp. 47–80, 2021. 
+
