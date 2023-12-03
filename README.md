@@ -117,22 +117,30 @@ To design a new jet stream area which reduces cost by 5%
 ### Background
 The jet stream refers to a narrow and high-altitude air current in the atmosphere, where aircraft will consume less time and fuel while cruising. It is characterized by high wind speeds and is mainly formed due to temperature and pressure differences in the atmosphere. 
 
-![image](https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/2c6b234c-0052-4c29-88b9-1a68ca1a8570)
+<p align = "middle">
+  <img src = "https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/2c6b234c-0052-4c29-88b9-1a68ca1a8570" alt = "animated" width = 600 height = 300/>
+  </p>
 
 ### Methodology
 With the scenario same as Task 1 as the background, we need to find the specific area to set the jet stream where the cost of flight cab is reduced by 5%。 The specific area is also required to span across the map laterally and span a 5-unit length vertically.
 
 ### Coding section
 
-![螢幕截圖 2023-12-02 下午1 56 24](https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/c912c74d-693a-4e57-b7d3-2392c5bc9c80)
+<p align = "middle">
+  <img src = "https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/c912c74d-693a-4e57-b7d3-2392c5bc9c80" alt = "animated" width = 600 height = 300/>
+  </p>
 
 This is the part where we have added the jet stream area. We have set a range and chosen the best area for the jet stream based on the best value.
 
 ### Results
 
-<img width="1264" alt="螢幕截圖 2023-12-02 下午3 17 03" src="https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/cc6e575d-d303-4d32-ada9-eb8d84fc5eb3">
+<p align = "middle">
+  <img src = "https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/c912c74d-693a-4e57-b7d3-2392c5bc9c80](https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/cc6e575d-d303-4d32-ada9-eb8d84fc5eb3" alt = "animated" width = 600 height = 300/>
+  </p>
 
-![螢幕截圖 2023-12-02 下午1 55 32](https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/841aec23-7572-4cfd-abc5-3834415668bf)
+<p align = "middle">
+  <img src = "https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/841aec23-7572-4cfd-abc5-3834415668bf" alt = "animated" width = 600 height = 300/>
+  </p>
 
 For the results, we can conclude that after the use of the jet stream area, the total cost of A330-900 neo is around 85000 USD, while the total cost of A350-900 is around 88300 USD. Furthermore, we can know that A321 neo is not viable in this scenario.
 
@@ -166,7 +174,9 @@ At this stage, we will visualize the two checkpoints by marking them in green on
 
 ### Result
 
-![gifv2](https://cdn.discordapp.com/attachments/901650593637101600/1180453332117102603/ezgif.com-video-to-gif.gif?ex=657d79d6&is=656b04d6&hm=aa91b17c198c49150713cf2cf5ca66f828cd572cd2cb770524516eaa91bcf6ea&)
+<p align = "middle">
+  <img src = "https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/841aec23-7572-4cfd-abc5-3834415668bf" alt = "animated" width = 600 height = 300/>
+  </p>
 
 ## Task A2
 ### Goal 
@@ -216,14 +226,18 @@ Sometimes obstacles may be generated on the position of the start or end nude, w
 
 **Result for BFS (sped up by x5)**:
 
-![Untitled ‑ Made with FlexClip (1)](https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149984998/e4f89322-87ac-45bf-8462-194caa6808cc)
+<p align = "middle">
+  <img src = "https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149984998/e4f89322-87ac-45bf-8462-194caa6808cc" alt = "animated" width = 600 height = 300/> 
+</p>
 
 
 Without a doubt, BFS planning requires a considerably longer time compared to A planning. The process of calculating and determining the optimal pathway from the starting point to the destination takes a substantial amount of time. We have even enhanced the speed by a factor of 5 on our GitHub. However, when comparing these two programs, we highly recommend utilizing A path planning as it significantly reduces the time required.
 
 **Results for Dijkstra (sped up by x5)**:
 
-![Untitled ‑ Made with FlexClip (4)](https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149984998/e7d8e49a-0e90-4daa-92ee-018953bf76fb)
+<p align = "middle">
+  <img src = "https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149984998/e7d8e49a-0e90-4daa-92ee-018953bf76fb" alt = "animated" width = 600 height = 300/>
+  </p>
 
 
 After examining the outcomes of two different coding approaches, it can be concluded that Dijkstra's algorithm finds longer flight paths for the aircraft compared to A path planning, but it is significantly faster than BFS. Even with a 5x speed improvement, Dijkstra's algorithm still takes considerable time due to its extensive path searching. On the other hand, BFS, despite being sped up by 5x, requires even more time for calculations and finding the final path. Therefore, it is evident that A* path planning is the optimal choice for our project. It efficiently reaches the goal point in the shortest possible manner. Hence, selecting A* path planning was the most suitable decision for our coding project.
