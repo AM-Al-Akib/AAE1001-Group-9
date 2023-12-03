@@ -35,8 +35,10 @@ Four paramount trade-off criteria are essential considerations in any path-plann
 [![IMAGE ALT TEXT HERE]()
 
 ## Task 1
-**Goal**: To find an appropriate aircraft model that can achieve minimum cost for each given scenario. 
-**Methodology**: 
+###Goal:
+To find an appropriate aircraft model that can achieve minimum cost for each given scenario. 
+
+###Methodology 
 For the first task, for three different scenarios, we need to find the most cost-effective aircraft. To solve this task, first, we changed the codes of the borders of the cost-intensive areas to match them with our scenarios. Then we added the conditions of the three scenarios provided and that of the aircraft in our code. After that, we added a calculating system in our code so that it could automatically calculate how much cost each aircraft would have by analyzing all the data we provided.
 
 This is the most efficient flight plan that our group has formulated.
