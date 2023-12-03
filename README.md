@@ -139,38 +139,18 @@ This is the part where we have added the jet stream area. We have set a range an
 
 For the results, we can conclude that after the use of the jet stream area, the total cost of A330-900 neo is around 85000 USD, while the total cost of A350-900 is around 88300 USD. Furthermore, we can know that A321 neo is not viable in this scenario.
 
-## Task 3
+## Task 3 : Methodology Results and Discussion
 
-### Goal
-To design a new aircraft model that achieves minimum costs for the specific scenarios in Task1
+### Methodology
+In this task, we designed one imaginary aircraft named G911. Here we were using Python automatically to calculate the cost and other credentials for this imaginary plane.
 
-### Trend
-According to the changes in oil prices in 2023, oil prices have dropped. In addition, there are many obstacles in the scene and the flight path is long. Large aircraft such as B747 can be considered.
-![pic1]()
-### Results
-The B747 uses four engines and costs 75529$, which is better than the three aircraft in task1, and the number of flights is 7
-![pic2]()
-### Calculation
-Refering to the formula Cost(C) = CF · ΔF · T best + CT  . T best+Cc, We have found that the total cost approximates to $75529 which is much lower than the cost for an A330neo. Meanwhile, the capacity of newly designed aircraft, B747, is 429 passengers. Allowing us to exploit twin-engine aircraft, flying 7 flights weekly. Having a table of fuel price, we have noted that bbl was mainly used there, it is why we used this website, " https://www.convertunits.com/from/barrel +%5bUS,+liquid%5d/to/kilo+gram#:~:text=Quick%20conversion%20chart%20of%20barrel%20%5B US%2C%20liquid%5D%20to,liquid%5D%20to%20kilo%20gram%20%3D%20238.48094%20kilo%20  gram", for converting barrels to kilograms for further calculations in coding
- 
-### Reasoning
-By comparing other candidate aircraft such as A321, A330, A340, A350 and B747. We determined that an aircraft with a larger seating capacity and a modest four-engine configuration would be most efficient. This is because there are many obstacles in the scene graph of our team, the single flight time is long, and the flight cost of small and medium-sized aircraft has greatly increased. The number of flights should be reduced as much as possible, so B747 was chosen.
-### Coding Section
-![pic3]()
-This part of coding is just a list of constant for future calculations that will be made. Taking scenario 1 from task 1, our newly designed aircraft should carry 3000 passengers in a week, with maximum number of flights of 12. We have, also,input other constants such as CT and CF for both twin and 4 engine aircrafts, but the most vital part is the "usdbbl". Looking at provided table, we have taken a value for Asia and Oceania Region since this region is more actual than others   for us.
-![pic4]()
-This part is the most essential for completing Task 3. Firstly, we have written a formula forconverting from usd per barrel to cost for fuel in terms of kilograms since further calculations should include exactly kilograms, but not barrels. Next two formulas of "m" and "N" are responsible for adding additional costs for every 50 passengers and  revealing the total number  of flights, which will not be changed in further, respectively. Both values are rounded to the next number by code "math.ceil".
-Continuing the code, we can note that there are two possible outcomes of Total_cost, where one of them is for twin-engine aircraft, while the second one is for 4-engine and from now, the most   interesting part starts:
-![pic5]()
-Here we make the code start to calculate the most cheapest value and the best type of aircraft in terms of engine by itself. Starting from the lowest number of passenegrs, 100, code makes the Total_cost of 100 people as the lowest and bestpassengers, number of passengers that suits much more for our case, as 100. The second part of the code: 
-![pic6]()
-In this part, we make the code search the most reliable results of both costs and number of passengers by itself by comparing all values and choosing the most effective one. 
-![pic7]()
-This formula is pretty similar with other formulas in task 1 and 2, but here the coding can give 
-either one of the solution which probably describes all information that is needed. Already 
-calculating the best number of passengers, the code proceeds its further calculation of the 
-Total_cost of our new aircraft, by checking in which condition the capacity suits more. The part "if bestpassengers >= 300" makes coding to choose which type of new aircraft we should use to minimize our costs. If a new aircraft's capacity is higher, then coding print name of a new aircraft, the number of engines that it should possess, and the cost that it requires for operation. Moreover, it, also, prints the number of seats that is needed for the aircraft to fulfill requirements. Otherwise, if the number of passengers is lower than 300, it swicthes to twin-engine aircraft, showing its passenger capacity and operational cost. 
+### Result
+<p align = "middle">
+  <img src = "T_3 results.png" alt = "animated" width = 600 height = 200/>
+  </p>
 
+### Discussion
+In our coding process, we used necessary data and coding to calculate "Total Trip time," "Total Cost," and "Total Passenger Capacity". Here, we tried to decide which plane type is better for this scenario. Is it the dual-engine model or the four-engine one.
 
 ## Task A1
 ### Goal
