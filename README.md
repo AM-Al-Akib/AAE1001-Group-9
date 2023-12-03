@@ -15,7 +15,7 @@ Ni Shuyu - "nishuyu"
 Leung Siu Kwan - "230Jonas"
 
 **Member 5:**
-x - "x"
+XIE TIANZHUO - "rudolphzhuo"
 
 **Member 6:**
 LongYiqi - "longyiqi"
