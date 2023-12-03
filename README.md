@@ -118,7 +118,7 @@ To design a new jet stream area which reduces cost by 5%
 The jet stream refers to a narrow and high-altitude air current in the atmosphere, where aircraft will consume less time and fuel while cruising. It is characterized by high wind speeds and is mainly formed due to temperature and pressure differences in the atmosphere. 
 
 <p align = "middle">
-  <img src = "https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/2c6b234c-0052-4c29-88b9-1a68ca1a8570" alt = "animated" width = 600 height = 300/>
+  <img src = "https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/2c6b234c-0052-4c29-88b9-1a68ca1a8570" alt = "animated" width = 600 height = 450/>
   </p>
 
 ### Methodology
@@ -127,7 +127,7 @@ With the scenario same as Task 1 as the background, we need to find the specific
 ### Coding section
 
 <p align = "middle">
-  <img src = "https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/c912c74d-693a-4e57-b7d3-2392c5bc9c80" alt = "animated" width = 600 height = 300/>
+  <img src = "https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/c912c74d-693a-4e57-b7d3-2392c5bc9c80" alt = "animated" width = 600 height = 200/>
   </p>
 
 This is the part where we have added the jet stream area. We have set a range and chosen the best area for the jet stream based on the best value.
@@ -135,11 +135,7 @@ This is the part where we have added the jet stream area. We have set a range an
 ### Results
 
 <p align = "middle">
-  <img src = "https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/c912c74d-693a-4e57-b7d3-2392c5bc9c80](https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/cc6e575d-d303-4d32-ada9-eb8d84fc5eb3" alt = "animated" width = 600 height = 300/>
-  </p>
-
-<p align = "middle">
-  <img src = "https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/841aec23-7572-4cfd-abc5-3834415668bf" alt = "animated" width = 600 height = 300/>
+  <img src = "https://github.com/AM-Al-Akib/AAE1001-Group-9/assets/149348069/841aec23-7572-4cfd-abc5-3834415668bf" alt = "animated" width = 600 height = 150/>
   </p>
 
 For the results, we can conclude that after the use of the jet stream area, the total cost of A330-900 neo is around 85000 USD, while the total cost of A350-900 is around 88300 USD. Furthermore, we can know that A321 neo is not viable in this scenario.
