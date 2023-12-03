@@ -138,6 +138,8 @@ I look forward to having more learning experiences like this path-planning proje
 Then, I hope I’ll be able to reflect on what I learned here. And in this way, I want to increase my understanding of the nitty-gritty of aviation knowledge and industry terms.
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 **Leung Siu Kwan's Reflection:** The objective of my assignment is to develop an add-on for the code created in Task 1, presenting a blend of straightforward tasks and engaging challenges. The simplicity lies in the foundation provided by the pre-existing code, which spares me from starting from scratch and allows me to focus on modifying and enhancing specific sections. Conversely, the complexity emerges from the necessity to meticulously review and comprehend the original code to determine the precise areas that require adjustments. The analytical process of dissecting the entire codebase is intellectually gratifying, especially when I achieve a thorough understanding of its mechanics and successfully integrate my contributions.
 Additionally, contributing to the GitHub README has been an enjoyable aspect of the project. There's a certain pleasure in committing incremental changes and observing the evolution of the document over time. Witnessing the culmination of these small, yet significant, contributions into a comprehensive final product is immensely satisfying. This experience not only enhances my technical skills but also provides a sense of accomplishment in the collaborative and iterative nature of coding.
 
